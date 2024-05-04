@@ -269,7 +269,13 @@ After the installation is complete, you'll need to configure the Clous SDK for y
 Cloud Shell provides command-line access to cloud resources directly from a browser.  
 It's a Debian-based VM with a persistent 5-GB home directory, which makes it easy to manage Google Cloud projects and resources.  
 
+With Cloud Shell, the Cloud SDK `gcloud` command and other utilities are always installed, available, up to date, and fully authenticated.  
 
+To start Cloud Shell, navigate to console.cloud.google.com and click the Activate Cloud Shell icon on the toolbar.  
+This will activate the Cloud Shell terminal, which will open in the lower portion of the window.  
+
+From the terminal window, you can launch the Cloud Shell code editor, which will open Cloud Shell in a new page.  
+With the Cloud Shell code editor, you can edit files inside your Cloud Shell environment in real time within the web browser.
 
 ## Google Cloud APIs
 
