@@ -1,5 +1,7 @@
 Google Cloud Platform (GCP) is one of the biggest cloud providers, right behind AWS (Amazon Web Services) and Azure (Microsoft).
 
+---
+
 # What is cloud computing?
 
 The US National Institute of Standards and Technology (**NIST**) created this term in 2011:  
@@ -121,6 +123,7 @@ These nodes are locations where high demand content is cached for quicker access
 will provide the quickest response time.  
 
 Google cloud's infrastructure is based in 5 major geographic **locations**: North America, South America, Europe, Asia, and Australia.  
+
 Each of these locations is divided into several **regions**. Regions represent independant geographic areas, and are composed of **zones**.  
 For example, London, or europe-west2, is a region that currently contains 3 different zones.  
 **A zone is an area where Google Cloud resources are deployed.**  
@@ -154,7 +157,57 @@ To access the console, navigate to console.cloud.google.com
 
 ## Understanding projects
 
+The console is used to access and use resources. **Resources are organized in projects**.  
+To understand this organization, let's explore where projects fit in the greater Google Cloud resource hierarchy.  
+
+This hierarchy is made up of 4 levels:
+- resources (bottom)
+- projects
+- folders
+- organization node (top)
+
+**Resources** include: virtual machines, cloud storage buckets, tables in BigQuery, or anything else in Google Cloud.  
+
+Projects are the basis for enabling and using Google Cloud services, like managing APIs, enabling billing, adding and  
+removing collaborators, and enabling other Google services.  
+
+Each project is a separate compartment, and **each resource belongs to exactly one project**.  
+Projects can have different owners and users, because they're billed and managed separately.  
+
+Each Google Cloud project has 3 identifying attributes:
+- a project ID
+- a project name
+- a project number
+
+The project ID is a globally unique identifier assigned by Google that cannot be changed (immutable).  
+Google Cloud also assigns each project a unique project number. They're mainly used internally by Google.
+The project names, however, are user-created. They don't have to be unique and can be changed at any time.  
+
+**So, how are you expected to manage projects?**  
+Google Cloud has the **Resource Manager tool**, designed to help you do just that.  
+
+The resource manager tool (RMT) is an API that can: 
+- gather a list of all the projects associated with an account
+- create new projects
+- update existing projects
+- delete projects
+
+This RMT can even recover projects that were previously deleted and can be accessed through the RPC API and the REST API.  
+
+<[!note]
+RPC API = remote procedure call application programming interface
+
+You can use **folders** to group projects under an organization in a hierarchy.  
+For example, your organization might contain multiple departments, each with its own set of Google Cloud resources.  
+Folders let you group these resources on a per-department basis.  
+
+Folders give teams the ability to delegate administrative rights so that they can work independently.  
+To use folders, you must have an organization node, which is the topmost resource in the Google Cloud hierarchy.  
+Everything else attached to that account goes under this node, which includes folders, projects, and other resources.
+
 ## Google cloud billing
+
+
 
 ## Install and configure the Cloud SDK
 
