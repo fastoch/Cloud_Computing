@@ -1,3 +1,5 @@
+Google Cloud Platform (GCP) is one the biggest cloud providers, along with AWS (Amazon Web Services) and Azure (Microsoft).
+
 # What is cloud computing?
 
 The US National Institute of Standards and Technology (**NIST**) created this term in 2011:  
@@ -52,7 +54,31 @@ physical data centers.
 to be focused on application logic.  
 
 - In the IaaS model, customers pay for the resources they allocate ahead of time.  
-- In the PaaS model, customers pay for the resources they actually use.  
+- In the PaaS model, customers pay for the resources they actually use.
+
+As cloud computing has evolved, the momentum has shifted toward managed infrastructure and managed services.  
+Leveraging managed resources and services allows companies to concentrate more on their business goals and spend less time and  
+money on creating and maintaining their technical infrastructure.  
+
+**Serverless** is yet another step in the evolution of cloud computing.  
+Serverless computing allows developers to concentrate on their code, rather than on server configuration, by eliminating the  
+need for any infrastructure management.  
+
+Serverless technologies offered by Google include **Cloud Functions**, which manages event-driven code as a pay-as-you-go service,  
+and **Cloud Run**, which allows customers to deploy their containerized microservices-based application in a fully managed environment.  
+
+You might also have heard about **Software as a service** and wondered what it is and how it fits into the cloud ecosphere.  
+**SaaS** applications are not installed on your local computer, they run in the cloud and are consumed directly over the internet by end users.  
+
+Google's popular applications like Gmail, Docs, and Drive, collectively known as Google Worspace, are all classified as SaaS.
+
+---
+
+# Google Cloud architecture
+
+
+
+
 
 
 
