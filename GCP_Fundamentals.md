@@ -1,4 +1,4 @@
-Google Cloud Platform (GCP) is one the biggest cloud providers, along with AWS (Amazon Web Services) and Azure (Microsoft).
+Google Cloud Platform (GCP) is one of the biggest cloud providers, right behind AWS (Amazon Web Services) and Azure (Microsoft).
 
 # What is cloud computing?
 
