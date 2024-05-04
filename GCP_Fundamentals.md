@@ -76,12 +76,83 @@ Google's popular applications like Gmail, Docs, and Drive, collectively known as
 
 # Google Cloud architecture
 
+**3 layers**:
+- the base layer = **networking and security**, lays the foundation to support all of Google's infrastructure and applications
+- the intermediate layer = **compute** & **storage**, are decoupled so they can scale independently base on need 
+- the top layer = **Big Data & ML products**, enable you to perform tasks to store, process and deliver business insights,
+  data pipelines, and machine learning models
 
+Thanks to Google cloud, you can accomplish these tasks without needing to manage and scale the underlying infrastructure.  
 
+**Google offers a range of computing services**, which includes:
+- Compute Engine
+- Google Kubernetes (K8s) Engine
+- App Engine
+- Cloud Functions
+- Cloud Run
 
+Google Cloud also offers **a variety of managed storage options**:
+- Cloud storage
+- Cloud SQL
+- Cloud spanner
+- Cloud bigtable
+- Firestore
 
+Cloud SQL and Cloud spanner are **relational databases**, while Bigtable and Firestore are **NoSQL databases**.  
 
+And then, there's a robust big data and ML product line. This includes:
+- cloud storage
+- dataproc
+- bigtable
+- BigQuery
+- dataflow
+- firestore
+- pub/sub
+- looker
+- cloudspanner
+- AutoML
+- Vertex AI
 
+As previously mentioned, the Google network is part of the foundation that supports all of Google's infrastructure and applications.  
+Google's network is the largest network of its kind. This network is designed to give customers the highest possible throughput and  
+lowest possible latencies for their applications by leveraging more than 100 content caching nodes worldwide.  
+
+These nodes are locations where high demand content is cached for quicker access, to respond to user requests from the location that  
+will provide the quickest response time.  
+
+Google cloud's infrastructure is based in 5 major geographic **locations**: North America, South America, Europe, Asia, and Australia.  
+Each of these locations is divided into several **regions**. Regions represent independant geographic areas, and are composed of **zones**.  
+For example, London, or europe-west2, is a region that currently contains 3 different zones.  
+**A zone is an area where Google Cloud resources are deployed.**  
+
+Google Cloud lets users specify the geographical locations to run services and resources.  
+In many cases, you can even specify the location on a zonal, regional, or multi-regional level.  
+This is useful for bringing applications closer to users around the world, and also for protection in case there are issues with  
+an entire region, say, due to a natural disaster.  
+
+Google cloud currently supports 121 zones in 40 regions, though this is increasing all the time.  
+The most up to date information can be found at cloud.google.com/about/locations  
 
 ---
-EOF
+
+# Start with a solid platform (User Interface)
+
+You can interact with Google Cloud in 4 ways:
+- Google cloud console
+- Cloud SDK & Cloud shell
+- APIs
+- Cloud Mobile App
+
+## The Google Cloud console
+
+- simple web-based graphical user interface
+- helps you deploy, scale, and diagnose production issues 
+- easily find resources, check their health, have full management control over them, and set budgets
+- provides a search facility to quickly find resources and connect to instances via SSH in the browser
+
+
+  
+
+
+
+
