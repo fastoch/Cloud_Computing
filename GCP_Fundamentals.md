@@ -207,13 +207,73 @@ Everything else attached to that account goes under this node, which includes fo
 
 ## Google cloud billing
 
+Billing is established at the project level.  
+This means that when you define a Google Cloud project, you link a billing account to it.  
 
+This billing account is where you configure all your billing information.  
+A billing account can be linked to zero or more projects, but projects that aren't linked to a billing account can  
+only use free Google Cloud services.  
+
+You can define budgets at the billing account level or at the project level.  
+A budget can be a fixed limit, or it can be tied to another metric - for example, a percentage of the previous month's spend.  
+
+To be notified when costs approach your budget limit, you can create an alert.  
+
+**Reports** is a visual tool in the Google Cloud console that lets you monitor expenditure based on a project or services.  
+
+Finally, Google Cloud also implements **quotas**, which are designed to prevent the over-consumption of resources because of an  
+error or a malicious attack, protecting both account owners and the Google Cloud community as a whole.  
+
+There are 2 types of quotas: 
+- rate quotas
+- allocation quotas.
+Both are applied at the project level.  
+
+**Rate quotas** reset after a specific time.  
+For example, by default, the GKE service implements a quota of 1,000 calls to its API from each Google Cloud project every 100 seconds.  
+After 100 seconds, the limit is reset.  
+
+Allocation quotas govern the number of resources you can have in your projects.  
+For example, by default, each Google Cloud project has a quota allowing it no more than 5 virtual private cloud networks.  
+
+Although projects all start with the same quotas, you can change some of them by requesting an increase from Google Cloud support.  
+
+If you're interested in estimating cloud computing costs on Google Cloud, you can try out the Google Cloud pricing calculator at  
+cloud.google.com/products/calculator
 
 ## Install and configure the Cloud SDK
 
+SDK = software development kit  
+
+The Cloud SDK lets users run Google Cloud command-line tools from a local desktop.  
+It's a set of command-line tools that you can use to manage resources and applications hosted on Google Cloud.  
+
+These include:
+- the **gcloud** CLI, which provides the main CLI for Google Cloud products & services
+- **gsutil**, which lets you access Cloud Storage from the CLI
+- **bq**, a command-line tool for BigQuery
+
+When installed, all of the tools within the Cloud SDK are located under the **bin** directory.  
+
+To install the Cloud SDK to your desktop:
+- go to cloud.google.com/sdk
+- download the version for your OS
+- follow the instructions specific to your OS
+
+After the installation is complete, you'll need to configure the Clous SDK for your Google Cloud environment:
+- Run the `gcloud init` command
+- you'll be prompted for information, including your login credentials, default project, and default region and zone.
+
 ## Cloud shell
 
+Cloud Shell provides command-line access to cloud resources directly from a browser.  
+It's a Debian-based VM with a persistent 5-GB home directory, which makes it easy to manage Google Cloud projects and resources.  
+
+
+
 ## Google Cloud APIs
+
+
 
 ## The Cloud console mobile app
 
