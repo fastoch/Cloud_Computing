@@ -150,9 +150,22 @@ You can interact with Google Cloud in 4 ways:
 - easily find resources, check their health, have full management control over them, and set budgets
 - provides a search facility to quickly find resources and connect to instances via SSH in the browser
 
+To access the console, navigate to console.cloud.google.com  
+
+## Understanding projects
+
+## Google cloud billing
+
+## Install and configure the Cloud SDK
+
+## Cloud shell
+
+## Google Cloud APIs
+
+## The Cloud console mobile app
 
   
 
 
-
-
+---
+EOF
